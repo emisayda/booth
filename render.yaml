@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: removebg-api
+    runtime: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: REMOVE_BG_API_KEY
+        value: dDZPnYHqTaK5jGK7qmCgqodL
