@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Your API key is now stored securely on the backend
-REMOVE_BG_API_KEY = "dDZPnYHqTaK5jGK7qmCgqodL"
+REMOVE_BG_API_KEY = os.getenv("REMOVE_BG_API_KEY")
 
 @app.route('/cutout', methods=['POST'])
 def cutout():
